@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Formulario de Venta de Altavoces</title>
+</head>
+<body>
+<h2>Formulario para Venta de Altavoces</h2>
+<form action="/submit" method="post">
+<!-- Modelo -->
+<label for="modelo">Modelo:</label><br>
+<select id="modelo" name="modelo" required>
+<option value="">Seleccione un modelo</option>
+<option value="R4">R4</option>
+<option value="R5">R5</option>
+<option value="SR1">SR1</option>
+</select><br><br>
+<!-- Potencia máxima -->
+<label for="potencia">Potencia máxima (W):</label><br>
+<input type="number" id="potencia" name="potencia" min="50" max="100" required><br><br>
+<!-- Bluetooth -->
+<label>¿Bluetooth?</label><br>
+<input type="radio" id="bluetooth_si" name="bluetooth" value="Sí" required>
+<label for="bluetooth_si">Sí</label><br>
+<input type="radio" id="bluetooth_no" name="bluetooth" value="No" required>
+<label for="bluetooth_no">No</label><br><br>
+<!-- Color -->
+<label for="color">Color:</label><br>
+<input type="text" id="color" name="color" placeholder="Ej. Negro, Blanco, Rojo" required><br><br>
+<input type="submit" value="Enviar">
+</form>
+</body>
+</html>
